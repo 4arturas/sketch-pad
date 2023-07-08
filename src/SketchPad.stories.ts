@@ -2,7 +2,7 @@ import {createSketchPad, SketchPad, SketchPadProps} from "./SketchPad";
 import {Meta, StoryObj} from "@storybook/html";
 
 const meta = {
-    title: 'Example2/SketchPad',
+    title: 'My Examples/SketchPad',
     tags: ['autodocs'],
     render: ( args: SketchPadProps ) => {
         const sketchPad:SketchPad = createSketchPad( args );

@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-ts": "npx tsc",
+    "compile-ts-watch": "npx tsc -w",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -12,15 +14,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.22.7",
+    "@babel/preset-typescript": "^7.22.5",
     "@storybook/addon-essentials": "^7.1.0-beta.1",
     "@storybook/addon-interactions": "^7.1.0-beta.1",
     "@storybook/addon-links": "^7.1.0-beta.1",
     "@storybook/blocks": "^7.1.0-beta.1",
     "@storybook/html": "^7.1.0-beta.1",
-    "@storybook/html-vite": "^7.1.0-beta.1",
+    "@storybook/html-webpack5": "^7.1.0-beta.1",
     "@storybook/testing-library": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.1.0-beta.1"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
   }
 }
